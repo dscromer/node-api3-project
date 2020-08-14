@@ -3,7 +3,7 @@ const userRouter = require("./users/userRouter")
 const postRouter = require("./posts/postRouter")
 
 const server = express();
-const port = 8080
+const port = process.env.PORT || 8080
 
 server.use(express.json())
 
